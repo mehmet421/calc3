@@ -28,13 +28,13 @@ st.title("Calculator")
 st.markdown("---")
 
 st.subheader("Milk")
-m_val = st.number_input("Milk quantity", value=m, key="m")
+m_val = st.number_input("Milk quantity", value=0, key="m")
 st.subheader("Yogurt")
 y_val = st.number_input("Yogurt quantity", value=0, key="y")
 st.subheader("Cheese")
 ch_val = st.number_input("Cheese quantity", value=0, key="ch")
 st.subheader("Flakes")
-f_val = st.number_input("Cornlakes quantity", value=0, key="f")
+f_val = st.number_input("Cornflakes quantity", value=0, key="f")
 st.subheader("Beans")
 b_val = st.number_input("Beans quantity", value=0, key="b")
 st.subheader("Grud")
@@ -44,7 +44,7 @@ p_val = st.number_input("Poroshok quantity", value=0, key="p")
 st.subheader("Cabbages")
 c_val = st.number_input("Cabbages quantity", value=0, key="c")
 
-count_a = m_val
+count_a = m_val * milk
 
 
 totals = Counter({
