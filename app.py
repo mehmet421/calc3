@@ -26,3 +26,6 @@ st.set_page_config(page_title="Calculator", page_icon="🧮", layout="centered")
 st.title("Calculator")
 
 st.markdown("---")
+
+st.subheader("milk")
+c_val = st.number_input("quant m", value=0, key="c")
