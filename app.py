@@ -44,7 +44,7 @@ p_val = st.number_input("Poroshok quantity", value=0, key="p")
 st.subheader("Cabbages")
 c_val = st.number_input("Cabbages quantity", value=0, key="c")
 
-count_a = m_val * milk
+count_a = m * m_val
 
 
 totals = Counter({
