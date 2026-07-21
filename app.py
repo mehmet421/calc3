@@ -28,7 +28,7 @@ st.title("Calculator")
 st.markdown("---")
 
 st.subheader("Milk")
-m_val = st.number_input("Milk quantity", value=0, key="m")
+m_val = st.number_input("Milk quantity", value=m, key="m")
 st.subheader("Yogurt")
 y_val = st.number_input("Yogurt quantity", value=0, key="y")
 st.subheader("Cheese")
