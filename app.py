@@ -44,8 +44,11 @@ p_val = st.number_input("Poroshok quantity", value=0, key="p")
 st.subheader("Cabbages")
 c_val = st.number_input("Cabbages quantity", value=0, key="c")
 
+count_a = m_val
+
+
 totals = Counter({
-    "Item A (× 3)": count_a
+    "Item A (× ": count_a
 })
 
 total = sum(totals.values())
