@@ -43,3 +43,16 @@ st.subheader("Poroshok")
 p_val = st.number_input("Poroshok quantity", value=0, key="p")
 st.subheader("Cabbages")
 c_val = st.number_input("Cabbages quantity", value=0, key="c")
+
+totals = Counter({
+    "Item A (× 3)": count_a
+})
+
+total = sum(totals.values())
+# Display Results
+st.markdown("---")
+st.header(f"Total: **{total:,}**")
+
+with st.expander("Show breakdown"):
+    for item, val in totals.items():
+        st.write(f"- **{item}:** {val:,}")
